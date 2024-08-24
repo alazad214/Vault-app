@@ -39,6 +39,9 @@ dependencies:
   #State Management
   get: ^4.6.6
 
+  #To used Show a Taost Message
+  fluttertoast: ^8.2.8
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
