@@ -42,6 +42,9 @@ dependencies:
   #To used Show a Taost Message
   fluttertoast: ^8.2.8
 
+  #Calculate 
+  math_expressions: ^2.6.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

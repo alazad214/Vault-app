@@ -22,7 +22,7 @@ class Button1 extends StatelessWidget {
         child: Text(
           text ?? 'Agree And Continue',
           style: TextStyle(
-              color:color?? AppColor.white,
+              color: color ?? AppColor.white,
               fontSize: 16.0,
               fontWeight: FontWeight.bold),
         ),
