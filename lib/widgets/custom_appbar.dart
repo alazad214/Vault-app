@@ -6,14 +6,14 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   final String? title;
   final bgcolor;
   final leading;
-  final Actions;
+  final actions;
   final actionOntap;
   const CustomAppbar(
       {super.key,
       this.title,
       this.bgcolor,
       this.leading,
-      this.Actions,
+      this.actions,
       this.actionOntap});
 
   @override
@@ -29,7 +29,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
               },
               icon: Icon(Icons.arrow_back))
           : null,
-      actions: Actions ??
+      actions: actions ??
           [
             IconButton(
                 onPressed: actionOntap,

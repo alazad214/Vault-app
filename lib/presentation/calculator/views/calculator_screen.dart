@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:vault_app/controller/calculator_controller.dart';
 import 'package:vault_app/presentation/calculator/widget/calculator_button.dart';
+import 'package:vault_app/presentation/theme/views/theme_screen.dart';
 import 'package:vault_app/widgets/custom_appbar.dart';
 
 class CalculatorScreen extends StatelessWidget {
@@ -10,7 +11,9 @@ class CalculatorScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: CustomAppbar(),
+        appBar: CustomAppbar(
+          actionOntap: () => Get.to(() => ThemeScreen()),
+        ),
         body: GetBuilder<CalculatorController>(builder: (controller) {
           return Padding(
             padding: EdgeInsets.all(15.0),
