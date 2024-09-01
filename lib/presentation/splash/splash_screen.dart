@@ -1,7 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:vault_app/presentation/onboading/views/onboading_screen.dart';
+import 'package:vault_app/controller/app_controller.dart';
 import 'package:vault_app/utils/app_config.dart';
 import 'package:vault_app/utils/app_image.dart';
 import 'package:vault_app/widgets/text1.dart';
@@ -14,10 +13,11 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  final controller = Get.put(AppController());
   @override
   void initState() {
     Future.delayed(Duration(seconds: 3), () {
-      Get.to(() => OnboadingScreen());
+      controller.checkAppState();
     });
     super.initState();
   }
